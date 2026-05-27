@@ -49,7 +49,7 @@ export default function CreateVolunteerPage() {
 
             <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[0.9fr_1.1fr]">
                 <div>
-                    <div className="mb-5 grid h-12 w-12 place-items-center rounded-lg bg-violet-300 text-zinc-950">
+                    <div className="mb-5 grid h-12 w-12 place-items-center rounded-lg bg-lime-300 text-zinc-950">
                         <UserRoundPlus className="h-6 w-6" />
                     </div>
                     <h1 className="text-4xl font-black tracking-tight">
@@ -112,7 +112,7 @@ export default function CreateVolunteerPage() {
                     <button
                         type="submit"
                         disabled={loading}
-                        className="w-full rounded-lg bg-white py-3 font-semibold text-zinc-950 hover:bg-violet-200 disabled:cursor-not-allowed disabled:opacity-60"
+                        className="w-full rounded-lg bg-white py-3 font-semibold text-zinc-950 hover:bg-lime-200 disabled:cursor-not-allowed disabled:opacity-60"
                     >
                         {loading ? "Adding..." : "Add Volunteer"}
                     </button>

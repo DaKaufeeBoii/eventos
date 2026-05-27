@@ -25,7 +25,7 @@ export default function VolunteersPage() {
         <div>
             <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                 <div>
-                    <p className="text-sm font-medium text-violet-200">
+                    <p className="text-sm font-medium text-lime-200">
                         Team coordination
                     </p>
                     <h1 className="mt-2 text-4xl font-black tracking-tight">
@@ -39,7 +39,7 @@ export default function VolunteersPage() {
 
                 <Link
                     href="/dashboard/volunteers/create"
-                    className="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-4 py-2.5 font-semibold text-zinc-950 hover:bg-violet-200"
+                    className="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-4 py-2.5 font-semibold text-zinc-950 hover:bg-lime-200"
                 >
                     <Plus className="h-4 w-4" />
                     Add Volunteer
@@ -62,7 +62,7 @@ export default function VolunteersPage() {
                     {volunteers.map((volunteer, index) => (
                         <div
                             key={volunteer.id}
-                            className="rounded-xl border border-white/10 bg-white/[0.06] p-5 transition hover:border-violet-300/40 hover:bg-white/[0.08]"
+                            className="rounded-xl border border-white/10 bg-white/[0.06] p-5 transition hover:border-lime-300/40 hover:bg-white/[0.08]"
                         >
                             <div className="flex items-start justify-between gap-4">
                                 <Link
@@ -84,7 +84,7 @@ export default function VolunteersPage() {
                                     </div>
                                 </Link>
 
-                                <span className="inline-flex items-center gap-1 rounded-full bg-violet-300 px-3 py-1 text-xs font-bold text-zinc-950">
+                                <span className="inline-flex items-center gap-1 rounded-full bg-lime-300 px-3 py-1 text-xs font-bold text-zinc-950">
                                     <Trophy className="h-3.5 w-3.5" />
                                     {volunteer.points ?? 0}
                                 </span>
@@ -108,13 +108,13 @@ export default function VolunteersPage() {
                             </div>
 
                             <div className="mt-5 flex items-center gap-2 border-t border-white/10 pt-4 text-sm text-zinc-400">
-                                <Users className="h-4 w-4 text-violet-200" />
+                                <Users className="h-4 w-4 text-lime-200" />
                                 Rank #{index + 1} on the leaderboard
                             </div>
 
                             <Link
                                 href={`/dashboard/volunteers/${volunteer.id}`}
-                                className="mt-5 inline-flex rounded-lg border border-white/10 px-3 py-2 text-sm font-semibold text-violet-100 hover:bg-white/10"
+                                className="mt-5 inline-flex rounded-lg border border-white/10 px-3 py-2 text-sm font-semibold text-lime-100 hover:bg-white/10"
                             >
                                 View profile
                             </Link>

@@ -54,7 +54,7 @@ export default function DashboardPage() {
         <div>
             <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                 <div>
-                    <p className="text-sm font-medium text-violet-200">
+                    <p className="text-sm font-medium text-lime-200">
                         Operations overview
                     </p>
                     <h1 className="mt-2 text-4xl font-black tracking-tight sm:text-5xl">
@@ -65,7 +65,7 @@ export default function DashboardPage() {
                         attendee readiness.
                     </p>
                 </div>
-                <div className="rounded-lg border border-violet-300/20 bg-violet-300/10 px-4 py-3 text-sm text-violet-100">
+                <div className="rounded-lg border border-lime-300/20 bg-lime-300/10 px-4 py-3 text-sm text-lime-100">
                     Today: 3 priority actions
                 </div>
             </div>
@@ -152,7 +152,7 @@ export default function DashboardPage() {
 
                 <div className="rounded-xl border border-white/10 bg-white/[0.06] p-5">
                     <div className="mb-5 flex items-center gap-3">
-                                <span className="grid h-10 w-10 place-items-center rounded-lg bg-violet-300 text-zinc-950">
+                                <span className="grid h-10 w-10 place-items-center rounded-lg bg-lime-300 text-zinc-950">
                             <Bot className="h-5 w-5" />
                         </span>
                         <div>

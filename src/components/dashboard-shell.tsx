@@ -48,9 +48,9 @@ export function DashboardShell({
     const pathname = usePathname();
 
     return (
-        <div className="relative min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top_left,rgba(124,58,237,0.2),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(56,189,248,0.12),transparent_26%),linear-gradient(135deg,#09090b_0%,#111827_52%,#0f172a_100%)] text-white">
+        <div className="relative min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top_left,rgba(217,249,157,0.2),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(216,137,24,0.16),transparent_26%),linear-gradient(135deg,#021f1a_0%,#063329_52%,#0b150f_100%)] text-white">
             <AuroraField />
-            <aside className="fixed inset-y-0 left-0 z-30 hidden w-72 border-r border-white/10 bg-zinc-950/80 px-5 py-6 backdrop-blur xl:block">
+            <aside className="fixed inset-y-0 left-0 z-30 hidden w-72 border-r border-lime-200/10 bg-[#032b22]/85 px-5 py-6 backdrop-blur xl:block">
                 <BrandLogo />
 
                 <nav className="mt-10 space-y-1">
@@ -67,8 +67,8 @@ export function DashboardShell({
                                 href={item.href}
                                 className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition ${
                                     active
-                                        ? "bg-white text-zinc-950"
-                                        : "text-zinc-300 hover:bg-white/10 hover:text-white"
+                                        ? "bg-lime-200 text-emerald-950"
+                                        : "text-lime-50/75 hover:bg-lime-100/10 hover:text-lime-50"
                                 }`}
                             >
                                 <Icon className="h-4 w-4" />
@@ -80,7 +80,7 @@ export function DashboardShell({
             </aside>
 
             <div className="relative z-10 xl:pl-72">
-                <header className="sticky top-0 z-20 border-b border-white/10 bg-zinc-950/80 px-4 py-3 backdrop-blur xl:hidden">
+                <header className="sticky top-0 z-20 border-b border-lime-200/10 bg-[#032b22]/85 px-4 py-3 backdrop-blur xl:hidden">
                     <div className="flex items-center justify-between">
                         <BrandLogo compact />
                         <div className="flex gap-1 overflow-x-auto">
@@ -98,8 +98,8 @@ export function DashboardShell({
                                         aria-label={item.label}
                                         className={`grid h-9 w-9 place-items-center rounded-lg ${
                                             active
-                                                ? "bg-white text-zinc-950"
-                                                : "text-zinc-300"
+                                                ? "bg-lime-200 text-emerald-950"
+                                                : "text-lime-50/75"
                                         }`}
                                     >
                                         <Icon className="h-4 w-4" />

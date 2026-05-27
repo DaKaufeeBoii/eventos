@@ -163,21 +163,21 @@ export default function VolunteerDetailsPage() {
                 <div className="space-y-6">
                     <Reveal>
                         <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.06]">
-                            <div className="h-52 bg-[radial-gradient(circle_at_30%_20%,rgba(168,85,247,0.42),transparent_34%),radial-gradient(circle_at_75%_35%,rgba(56,189,248,0.28),transparent_30%),linear-gradient(135deg,#18181b,#111827)]" />
+                            <div className="h-52 bg-[radial-gradient(circle_at_30%_20%,rgba(217,249,157,0.42),transparent_34%),radial-gradient(circle_at_75%_35%,rgba(56,189,248,0.28),transparent_30%),linear-gradient(135deg,#18181b,#111827)]" />
                             <div className="-mt-12 p-5 sm:p-7">
                                 <div className="grid h-24 w-24 place-items-center rounded-2xl border border-white/15 bg-white text-3xl font-black text-zinc-950 shadow-2xl shadow-black/30">
                                     {volunteer.name
                                         .slice(0, 2)
                                         .toUpperCase()}
                                 </div>
-                                <p className="mt-5 text-sm font-medium text-violet-200">
+                                <p className="mt-5 text-sm font-medium text-lime-200">
                                     Volunteer profile
                                 </p>
                                 <h1 className="mt-2 text-4xl font-black tracking-tight sm:text-5xl">
                                     {volunteer.name}
                                 </h1>
                                 <p className="mt-3 flex items-center gap-2 text-zinc-400">
-                                    <Mail className="h-4 w-4 text-violet-200" />
+                                    <Mail className="h-4 w-4 text-lime-200" />
                                     {volunteer.email}
                                 </p>
                             </div>
@@ -217,7 +217,7 @@ export default function VolunteerDetailsPage() {
                     <SpotlightCard>
                         <section className="p-5 sm:p-6">
                             <div className="mb-5 flex items-center gap-3">
-                                <Star className="h-5 w-5 text-violet-200" />
+                                <Star className="h-5 w-5 text-lime-200" />
                                 <h2 className="text-2xl font-bold">Ratings</h2>
                             </div>
 
@@ -243,9 +243,9 @@ export default function VolunteerDetailsPage() {
                                         onChange={(e) =>
                                             setScore(Number(e.target.value))
                                         }
-                                        className="w-full accent-violet-300"
+                                        className="w-full accent-lime-300"
                                     />
-                                    <span className="mt-1 block text-sm text-violet-200">
+                                    <span className="mt-1 block text-sm text-lime-200">
                                         {score} out of 5
                                     </span>
                                 </label>
@@ -258,7 +258,7 @@ export default function VolunteerDetailsPage() {
                                 />
                                 <button
                                     type="submit"
-                                    className="inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2.5 font-semibold text-zinc-950 hover:bg-violet-200"
+                                    className="inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2.5 font-semibold text-zinc-950 hover:bg-lime-200"
                                 >
                                     <Send className="h-4 w-4" />
                                     Submit Rating
@@ -275,7 +275,7 @@ export default function VolunteerDetailsPage() {
                                             <p className="font-semibold">
                                                 {rating.author}
                                             </p>
-                                            <div className="flex items-center gap-1 text-violet-200">
+                                            <div className="flex items-center gap-1 text-lime-200">
                                                 {Array.from({
                                                     length: rating.score,
                                                 }).map((_, index) => (
@@ -305,14 +305,14 @@ export default function VolunteerDetailsPage() {
                     <SpotlightCard>
                         <div className="grid grid-cols-2 gap-3 p-5">
                             <div className="rounded-lg bg-white/5 p-4">
-                                <Trophy className="mb-3 h-5 w-5 text-violet-200" />
+                                <Trophy className="mb-3 h-5 w-5 text-lime-200" />
                                 <p className="text-3xl font-black">
                                     {volunteer.points ?? 0}
                                 </p>
                                 <p className="text-sm text-zinc-400">Points</p>
                             </div>
                             <div className="rounded-lg bg-white/5 p-4">
-                                <Medal className="mb-3 h-5 w-5 text-violet-200" />
+                                <Medal className="mb-3 h-5 w-5 text-lime-200" />
                                 <p className="text-3xl font-black">
                                     {averageRating.toFixed(1)}
                                 </p>
@@ -326,7 +326,7 @@ export default function VolunteerDetailsPage() {
                     <SpotlightCard>
                         <div className="p-5">
                             <div className="mb-4 flex items-center gap-2">
-                                <UserRound className="h-4 w-4 text-violet-200" />
+                                <UserRound className="h-4 w-4 text-lime-200" />
                                 <h2 className="font-bold">
                                     Similar volunteers
                                 </h2>

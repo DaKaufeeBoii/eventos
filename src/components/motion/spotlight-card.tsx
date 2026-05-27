@@ -28,7 +28,7 @@ export function SpotlightCard({
             <div
                 className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
                 style={{
-                    background: `radial-gradient(circle at ${position.x}% ${position.y}%, rgba(168,85,247,0.2), rgba(56,189,248,0.08) 18%, transparent 38%)`,
+                    background: `radial-gradient(circle at ${position.x}% ${position.y}%, rgba(217,249,157,0.22), rgba(216,137,24,0.12) 18%, transparent 38%)`,
                 }}
             />
             <div className="relative">{children}</div>

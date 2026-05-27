@@ -52,10 +52,10 @@ export default function AISponsorPage() {
     return (
         <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-[0.9fr_1.1fr]">
             <Reveal>
-                <div className="mb-5 grid h-12 w-12 place-items-center rounded-lg bg-violet-300 text-zinc-950">
+                <div className="mb-5 grid h-12 w-12 place-items-center rounded-lg bg-lime-300 text-zinc-950">
                     <Bot className="h-6 w-6" />
                 </div>
-                <p className="text-sm font-medium text-violet-200">
+                <p className="text-sm font-medium text-lime-200">
                     Sponsor intelligence
                 </p>
                 <h1 className="mt-2 text-4xl font-black tracking-tight sm:text-5xl">
@@ -116,7 +116,7 @@ export default function AISponsorPage() {
                         <button
                             type="submit"
                             disabled={loading}
-                            className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-white py-3 font-semibold text-zinc-950 hover:bg-violet-200 disabled:cursor-not-allowed disabled:opacity-60"
+                            className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-white py-3 font-semibold text-zinc-950 hover:bg-lime-200 disabled:cursor-not-allowed disabled:opacity-60"
                         >
                             {loading ? (
                                 <>
@@ -135,7 +135,7 @@ export default function AISponsorPage() {
 
                 {result && (
                     <Reveal>
-                        <div className="whitespace-pre-wrap rounded-xl border border-violet-300/20 bg-violet-300/10 p-5 leading-7 text-zinc-100">
+                        <div className="whitespace-pre-wrap rounded-xl border border-lime-300/20 bg-lime-300/10 p-5 leading-7 text-zinc-100">
                             {result}
                         </div>
                     </Reveal>

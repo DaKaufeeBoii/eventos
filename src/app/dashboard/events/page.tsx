@@ -25,7 +25,7 @@ export default function EventsPage() {
         <div>
             <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                 <div>
-                    <p className="text-sm font-medium text-violet-200">
+                    <p className="text-sm font-medium text-lime-200">
                         Schedule and venues
                     </p>
                     <h1 className="mt-2 text-4xl font-black tracking-tight">
@@ -39,7 +39,7 @@ export default function EventsPage() {
 
                 <Link
                     href="/dashboard/create-event"
-                    className="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-4 py-2.5 font-semibold text-zinc-950 hover:bg-violet-200"
+                    className="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-4 py-2.5 font-semibold text-zinc-950 hover:bg-lime-200"
                 >
                     <Plus className="h-4 w-4" />
                     Create Event
@@ -62,7 +62,7 @@ export default function EventsPage() {
                     {events.map((event) => (
                         <div
                             key={event.id}
-                            className="rounded-xl border border-white/10 bg-white/[0.06] p-5 transition hover:border-violet-300/40 hover:bg-white/[0.08]"
+                            className="rounded-xl border border-white/10 bg-white/[0.06] p-5 transition hover:border-lime-300/40 hover:bg-white/[0.08]"
                         >
                             <Link href={`/dashboard/events/${event.id}`}>
                                 <h2 className="text-xl font-bold">
@@ -75,12 +75,12 @@ export default function EventsPage() {
 
                             <div className="mt-5 space-y-3 border-t border-white/10 pt-4 text-sm text-zinc-300">
                                 <p className="flex items-center gap-2">
-                                    <MapPin className="h-4 w-4 text-violet-200" />
+                                    <MapPin className="h-4 w-4 text-lime-200" />
                                     {event.location}
                                 </p>
 
                                 <p className="flex items-center gap-2">
-                                    <CalendarPlus className="h-4 w-4 text-violet-200" />
+                                    <CalendarPlus className="h-4 w-4 text-lime-200" />
                                     {new Date(
                                         event.event_date
                                     ).toLocaleString()}
@@ -89,7 +89,7 @@ export default function EventsPage() {
 
                             <Link
                                 href={`/dashboard/events/${event.id}`}
-                                className="mt-5 inline-flex rounded-lg border border-white/10 px-3 py-2 text-sm font-semibold text-violet-100 hover:bg-white/10"
+                                className="mt-5 inline-flex rounded-lg border border-white/10 px-3 py-2 text-sm font-semibold text-lime-100 hover:bg-white/10"
                             >
                                 View details
                             </Link>

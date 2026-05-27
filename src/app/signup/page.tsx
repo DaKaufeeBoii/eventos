@@ -39,7 +39,7 @@ export default function SignupPage() {
     }
 
     return (
-        <main className="flex min-h-screen items-center justify-center bg-[radial-gradient(circle_at_top,rgba(124,58,237,0.22),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(56,189,248,0.12),transparent_30%),#09090b] px-4 text-white">
+        <main className="flex min-h-screen items-center justify-center bg-[radial-gradient(circle_at_top,rgba(217,249,157,0.22),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(56,189,248,0.12),transparent_30%),#09090b] px-4 text-white">
             <div className="w-full max-w-md rounded-xl border border-white/10 bg-white/[0.06] p-6 shadow-2xl shadow-black/30 backdrop-blur sm:p-8">
                 <div className="mb-8">
                     <BrandLogo />
@@ -92,7 +92,7 @@ export default function SignupPage() {
                     <button
                         type="submit"
                         disabled={loading}
-                        className="w-full rounded-lg bg-white py-3 font-semibold text-zinc-950 transition hover:bg-violet-200 disabled:cursor-not-allowed disabled:opacity-60"
+                        className="w-full rounded-lg bg-white py-3 font-semibold text-zinc-950 transition hover:bg-lime-200 disabled:cursor-not-allowed disabled:opacity-60"
                     >
                         {loading
                             ? "Creating..."
@@ -101,7 +101,7 @@ export default function SignupPage() {
                 </form>
                 <p className="mt-6 text-center text-sm text-zinc-400">
                     Already have an account?{" "}
-                    <Link href="/login" className="font-semibold text-violet-200">
+                    <Link href="/login" className="font-semibold text-lime-200">
                         Login
                     </Link>
                 </p>

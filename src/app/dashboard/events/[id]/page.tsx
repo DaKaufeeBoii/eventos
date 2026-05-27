@@ -207,9 +207,9 @@ export default function EventDetailsPage() {
                 <div className="space-y-6">
                     <Reveal>
                         <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.06]">
-                            <div className="h-56 bg-[radial-gradient(circle_at_30%_20%,rgba(168,85,247,0.42),transparent_34%),radial-gradient(circle_at_75%_35%,rgba(56,189,248,0.28),transparent_30%),linear-gradient(135deg,#18181b,#111827)]" />
+                            <div className="h-56 bg-[radial-gradient(circle_at_30%_20%,rgba(217,249,157,0.42),transparent_34%),radial-gradient(circle_at_75%_35%,rgba(56,189,248,0.28),transparent_30%),linear-gradient(135deg,#18181b,#111827)]" />
                             <div className="p-5 sm:p-7">
-                                <p className="text-sm font-medium text-violet-200">
+                                <p className="text-sm font-medium text-lime-200">
                                     Event details
                                 </p>
                                 <h1 className="mt-2 text-4xl font-black tracking-tight sm:text-5xl">
@@ -240,7 +240,7 @@ export default function EventDetailsPage() {
                     <SpotlightCard>
                         <section className="p-5 sm:p-6">
                             <div className="mb-5 flex items-center gap-3">
-                                <MessageSquare className="h-5 w-5 text-violet-200" />
+                                <MessageSquare className="h-5 w-5 text-lime-200" />
                                 <h2 className="text-2xl font-bold">
                                     Comments
                                 </h2>
@@ -267,7 +267,7 @@ export default function EventDetailsPage() {
                                 />
                                 <button
                                     type="submit"
-                                    className="inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2.5 font-semibold text-zinc-950 hover:bg-violet-200"
+                                    className="inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2.5 font-semibold text-zinc-950 hover:bg-lime-200"
                                 >
                                     <Send className="h-4 w-4" />
                                     Post Comment
@@ -304,7 +304,7 @@ export default function EventDetailsPage() {
                     <SpotlightCard>
                         <div className="space-y-4 p-5">
                             <div className="flex items-start gap-3">
-                                <CalendarDays className="mt-1 h-5 w-5 text-violet-200" />
+                                <CalendarDays className="mt-1 h-5 w-5 text-lime-200" />
                                 <div>
                                     <p className="font-semibold">
                                         {eventDate.toLocaleDateString(
@@ -329,7 +329,7 @@ export default function EventDetailsPage() {
                                 </div>
                             </div>
                             <div className="flex items-start gap-3 border-t border-white/10 pt-4">
-                                <MapPin className="mt-1 h-5 w-5 text-violet-200" />
+                                <MapPin className="mt-1 h-5 w-5 text-lime-200" />
                                 <div>
                                     <p className="font-semibold">
                                         {event.location}
@@ -345,14 +345,14 @@ export default function EventDetailsPage() {
                     <SpotlightCard>
                         <section className="p-5">
                             <div className="mb-4 flex items-center gap-2">
-                                <TicketCheck className="h-5 w-5 text-violet-200" />
+                                <TicketCheck className="h-5 w-5 text-lime-200" />
                                 <h2 className="font-bold">Registration</h2>
                             </div>
 
                             {registration ? (
                                 <div>
-                                    <div className="mb-4 flex items-start gap-3 rounded-lg border border-violet-300/20 bg-violet-300/10 p-3">
-                                        <CheckCircle2 className="mt-0.5 h-5 w-5 text-violet-200" />
+                                    <div className="mb-4 flex items-start gap-3 rounded-lg border border-lime-300/20 bg-lime-300/10 p-3">
+                                        <CheckCircle2 className="mt-0.5 h-5 w-5 text-lime-200" />
                                         <div>
                                             <p className="font-semibold">
                                                 Registered
@@ -408,7 +408,7 @@ export default function EventDetailsPage() {
                                     />
                                     <button
                                         type="submit"
-                                        className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-white px-4 py-2.5 font-semibold text-zinc-950 hover:bg-violet-200"
+                                        className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-white px-4 py-2.5 font-semibold text-zinc-950 hover:bg-lime-200"
                                     >
                                         <QrCode className="h-4 w-4" />
                                         Register and Generate QR
@@ -421,7 +421,7 @@ export default function EventDetailsPage() {
                     <SpotlightCard>
                         <div className="p-5">
                             <div className="mb-4 flex items-center gap-2">
-                                <Tag className="h-4 w-4 text-violet-200" />
+                                <Tag className="h-4 w-4 text-lime-200" />
                                 <h2 className="font-bold">Related topics</h2>
                             </div>
                             <div className="flex flex-wrap gap-2">
@@ -447,7 +447,7 @@ export default function EventDetailsPage() {
                                 </h2>
                                 <Link
                                     href="/dashboard/events"
-                                    className="text-sm text-violet-200"
+                                    className="text-sm text-lime-200"
                                 >
                                     See all
                                 </Link>

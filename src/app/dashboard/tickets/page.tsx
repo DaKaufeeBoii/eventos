@@ -15,7 +15,7 @@ export default function TicketsPage() {
     return (
         <div className="grid min-h-[calc(100vh-4rem)] items-center gap-6 lg:grid-cols-[0.9fr_1.1fr]">
             <Reveal>
-                <p className="text-sm font-medium text-violet-200">
+                <p className="text-sm font-medium text-lime-200">
                     Entry verification
                 </p>
                 <h1 className="mt-2 text-4xl font-black tracking-tight sm:text-5xl">
@@ -48,7 +48,7 @@ export default function TicketsPage() {
             <SpotlightCard className="mx-auto w-full max-w-md p-6 text-center shadow-2xl shadow-black/30">
                 <div className="mb-5 flex items-center justify-between">
                     <div className="flex items-center gap-3 text-left">
-                        <span className="grid h-10 w-10 place-items-center rounded-lg bg-violet-300 text-zinc-950">
+                        <span className="grid h-10 w-10 place-items-center rounded-lg bg-lime-300 text-zinc-950">
                             <QrCode className="h-5 w-5" />
                         </span>
                         <div>
@@ -58,14 +58,14 @@ export default function TicketsPage() {
                             </p>
                         </div>
                     </div>
-                    <ShieldCheck className="h-5 w-5 text-violet-200" />
+                    <ShieldCheck className="h-5 w-5 text-lime-200" />
                 </div>
 
                 <div className="inline-block rounded-xl bg-white p-4">
                     <QRCode value={JSON.stringify(ticketData)} size={220} />
                 </div>
 
-                <button className="mt-6 inline-flex items-center justify-center gap-2 rounded-lg bg-white px-4 py-2.5 font-semibold text-zinc-950 hover:bg-violet-200">
+                <button className="mt-6 inline-flex items-center justify-center gap-2 rounded-lg bg-white px-4 py-2.5 font-semibold text-zinc-950 hover:bg-lime-200">
                     <Download className="h-4 w-4" />
                     Export Ticket
                 </button>
